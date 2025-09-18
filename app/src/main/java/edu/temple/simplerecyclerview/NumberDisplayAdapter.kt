@@ -21,6 +21,7 @@ class NumberDisplayAdapter(private val randomArray: Array<Int>): RecyclerView.Ad
         holder: NumberViewHolder,
         position: Int
     ) {
+        holder.textView.text = randomArray[position].toString()
         holder.textView.textSize = randomArray[position].toFloat()
     }
 
